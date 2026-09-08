@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="card-footer">
           <span class="card-date">📅 ${item.date}</span>
           <div class="card-actions">
-            <button class="action-btn open-btn" title="Open Link">🚀 Open</button>
+            <button class="action-btn open-btn" title="Open Link"> Open</button>
             <button class="action-btn delete-btn" title="Delete Note">🗑️ Delete</button>
           </div>
         </div>
