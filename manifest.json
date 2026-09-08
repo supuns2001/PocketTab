@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "PocketTab",
+  "version": "1.0",
+  "description": "Save web pages for later with custom notes and search through them instantly.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}

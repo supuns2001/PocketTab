@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PocketTab</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-area">
+        <span class="icon">🔖</span>
+        <h1 class="app-title">PocketTab</h1>
+      </div>
+      <span class="badge" id="linkCount">0 saved</span>
+    </header>
+
+    <!-- Form Section -->
+    <section class="add-section">
+      <div class="form-group">
+        <label for="pageTitleInput">Current Tab</label>
+        <input type="text" id="pageTitleInput" placeholder="Loading current page..." readonly>
+        <input type="hidden" id="pageUrlInput">
+      </div>
+
+      <div class="form-group">
+        <label for="noteInput">Add Note / Description</label>
+        <textarea id="noteInput" rows="2" placeholder="Why do you want to read this later?..."></textarea>
+      </div>
+
+      <button id="saveBtn" class="btn primary-btn">
+        <span>Save Page for Later</span>
+      </button>
+    </section>
+
+    <!-- Search & List Section -->
+    <section class="saved-section">
+      <div class="section-header">
+        <h2>Saved Pages</h2>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search notes...">
+        </div>
+      </div>
+
+      <div id="linksContainer" class="links-list"></div>
+
+      <div id="emptyState" class="empty-state hidden">
+        <span class="empty-icon">📂</span>
+        <p>No saved pages yet.</p>
+        <small>Click "Save Page for Later" above to add your first bookmark!</small>
+      </div>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
