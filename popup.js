@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Setup Event Listeners
   function setupEventListeners() {
-    // Save button click
+
     saveBtn.addEventListener("click", handleSaveItem);
 
-    // Search filter input
+
     searchInput.addEventListener("input", (e) => {
       const query = e.target.value.toLowerCase().trim();
       const filtered = savedItems.filter(
